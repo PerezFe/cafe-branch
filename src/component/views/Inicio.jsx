@@ -1,8 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 const Inicio = () => {
     return (
         <div>
-            <h1>Pagina Principal</h1>
+            <h1 className="text-center">Pagina Principal</h1>
         </div>
     );
 };
