@@ -3,9 +3,9 @@
 
 const Error404 = () => {
     return (
-        <div>
+        <section className="mainSection">
             <h3>Pagina de error</h3>
-        </div>
+        </section>
     );
 };
 
