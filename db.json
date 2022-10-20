@@ -36,13 +36,6 @@
       "id": 5
     },
     {
-      "nombreProducto": "tortillas",
-      "precio": "80",
-      "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&w=300",
-      "categoria": "salado",
-      "id": 6
-    },
-    {
       "nombreProducto": "factura con dulce de chele",
       "precio": "100",
       "imagen": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&w=300",
