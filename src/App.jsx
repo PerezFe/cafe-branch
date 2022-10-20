@@ -9,6 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 import Menu from "./component/common/Menu";
 import Footer from "./component/common/Footer";
+import Login from './component/views/Login';
+import Registro from './component/views/Registro';
 
 function App() {
   return (
@@ -36,6 +38,16 @@ function App() {
           exact
           path="/detalle-producto"
           element={<DetalleProducto></DetalleProducto>}
+        ></Route>
+        <Route
+          exact
+          path="/login"
+          element={<Login></Login>}
+        ></Route>
+        <Route
+          exact
+          path="/registro"
+          element={<Registro></Registro>}
         ></Route>
         <Route path="*" element={<Error404></Error404>} />
       </Routes>
