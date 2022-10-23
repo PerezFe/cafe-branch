@@ -17,6 +17,9 @@ const Menu = () => {
           <NavLink className="nav-item nav-link" to="/administrador">
             Administrar
           </NavLink>
+          <NavLink className="nav-item nav-link" to="/Login">
+            Login
+          </NavLink>
           <NavLink className="nav-item nav-link" to="/Registro">
             Registro
           </NavLink>
