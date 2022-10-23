@@ -8,10 +8,10 @@
       "id": 1
     },
     {
-      "nombreProducto": "brownie de prueba",
-      "precio": 250,
-      "categoria": "dulce",
-      "imagen": "https://images.pexels.com/photos/1657343/pexels-photo-1657343.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "nombreProducto": "Factura con dulce de leche v2",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "categoria": "salado",
       "id": 3
     },
     {
@@ -22,5 +22,5 @@
       "id": 5
     }
   ],
-  "usuarios":[]
+  "usuarios": []
 }

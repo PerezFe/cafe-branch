@@ -65,6 +65,24 @@ export const obtenerProductoAPI = async (id) => {
     }
 }
 
+export const editarProductoAPI = async (id, datosActualizados) => {
+    try{
+        const respuesta = await fetch(URL+"/"+id,{
+            method: "PUT",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(datosActualizados)
+        });
+        return respuesta;
+        
+
+    }catch(error){
+        console.log(error)
+    }
+}
+
+
 
 // --------------   USUARIOS -------------------
 
