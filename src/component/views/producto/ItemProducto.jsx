@@ -16,6 +16,7 @@ const ItemProducto = ({ producto, setProductos }) => {
       cancelButtonText: "Cancelar",
     }).then((result) => {
       if (result.isConfirmed) {
+        //consulta a la api
         borrarProductoAPI(producto.id).then((respuesta) => {
           if (respuesta.status === 200) {
             //actualizar el state productos o la tabla

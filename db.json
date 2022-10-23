@@ -8,11 +8,19 @@
       "id": 1
     },
     {
-      "nombreProducto": "brownie",
+      "nombreProducto": "brownie de prueba",
       "precio": 250,
       "categoria": "dulce",
       "imagen": "https://images.pexels.com/photos/1657343/pexels-photo-1657343.jpeg?auto=compress&cs=tinysrgb&w=300",
-      "id": 2
+      "id": 3
+    },
+    {
+      "nombreProducto": "Factura con dulce de leche",
+      "precio": "80",
+      "imagen": "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=300",
+      "categoria": "dulce",
+      "id": 5
     }
-  ]
+  ],
+  "usuarios":[]
 }
