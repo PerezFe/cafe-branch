@@ -1,18 +1,37 @@
+import { useEffect, useState } from 'react';
 import { Badge, Card, Col, Row } from 'react-bootstrap';
+import { consultarAPI } from "../helpers/queries";
+import { Link, useParams } from "react-router-dom";
+import Swal from 'sweetalert2';
+
+
+
 
 const DetalleProducto = () => {
+    const [producto, setProducto] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    consultarAPI(id).then((respuesta) => {
+      if (respuesta.status === 200) {
+        setProducto(respuesta.dato);
+      } else {
+        Swal.fire("Ocurrio un error", "Vuelva a intentarlo", "error");
+      }
+    });
+  },[]);
     
     return (
         <Card className='container my-5 mainSection'>
             <Row className='w-75'>
                 <Col md={6}>
-                    <img src='https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='brownie' className="w-100" />
+                    <img src={producto.imagen} className="w-100" />
                 </Col>
                 <Col md={6} className="py-3">
-                <h3>Brownie</h3>
+                <h3>{producto.nombreProducto}</h3>
                 <hr/>
                 <Badge bg="success">Dulce</Badge>
-                <p className='mt-3'><b>Precio: $300</b></p>
+                <p className='mt-3'><b>Precio: $</b>{producto.precio} </p>
                 </Col>
             </Row>
         </Card>

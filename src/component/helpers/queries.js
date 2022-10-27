@@ -21,6 +21,8 @@ export const consultarAPI = async () => {
     }
 }
 
+
+
 export const crearProductoAPI = async (producto) => {
     try{
         const respuesta = await fetch(URL,{
