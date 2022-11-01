@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Badge, Card, Col, Row } from 'react-bootstrap';
-import { consultarAPI } from "../helpers/queries";
+import { obtenerProductoAPI } from "../helpers/queries";
 import { Link, useParams } from "react-router-dom";
 import Swal from 'sweetalert2';
 
@@ -12,7 +12,7 @@ const DetalleProducto = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    consultarAPI(id).then((respuesta) => {
+    obtenerProductoAPI(id).then((respuesta) => {
       if (respuesta.status === 200) {
         setProducto(respuesta.dato);
       } else {
